@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Profile Card</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container mx-auto my-20">
+        <h1 class="text-3xl font-bold underline text-center my-10">Github Profile Card</h1>
+            <p class="text-center my-5">Enter a single Github username below and click the button to display profile info via JSON.</p> 
+
+            <div class="py-12 ">
+                <div class="mt-8 max-w-md mx-auto">
+                  <div class="grid grid-cols-1 gap-6">
+                    <form id="myForm">
+                    <label class="block">
+                      <span class="text-gray-700">User name</span>
+                      <input
+                        type="text"
+                        class="
+                          mt-0
+                          block
+                          w-full
+                          px-0.5
+                          border-0 border-b-2 border-gray-200
+                          focus:ring-0 focus:border-black
+                        "
+                        placeholder="github Username"
+                        id="ghusername"
+                      />
+                    </label>
+                   
+                    <div class="block">
+                      <div class="mt-2">
+                        <div>
+                          <label class="inline-flex items-center">
+                            <button type="submit" value="Show User Info" class="text-white bg-gradient-to-r from-violet-500 to-violet-800 hover:from-pink-500 hover:to-yellow-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-slate-500 dark:hover:bg-slate-700 dark:focus:bg-slate-800" > 
+                              Show User Info
+                            </button>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+
+      </div>
+      
+      <div id="ghapidata" class="text-white max-w-md mx-auto bg-gradient-to-r from-violet-500 to-violet-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl"></div>
+      <div class="hidden"></div>
+      <script src="dist/script.js"> </script>
+</body>
+</html>
